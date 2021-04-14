@@ -16,6 +16,9 @@ import { userActions } from "../actions";
 import { AppState } from "../reducers";
 import { AuthState, AppActions } from "../types";
 
+/******************************** CSS *********************************/
+import "./loginRegister.css"
+
 const LoginForm = () => {
   return (
     <div className="container">

@@ -1,0 +1,47 @@
+.loginImage {
+    float: right;
+  }
+  
+  .inputEmail,
+  .inputPassword {
+    width: 80% !important;
+  }
+  
+  .loginForm {
+    margin-top: 5rem !important;
+  }
+  
+  .loginCustomBtn {
+    background: transparent linear-gradient(90deg, #ffaa34 0%, #fd9f2d 100%) 0% 0%
+      no-repeat padding-box !important;
+    border: 1px solid #289944 !important;
+    border-radius: 4px !important;
+    opacity: 1 !important;
+    width: 30% !important;
+    height: 40px !important;
+    margin-top: 10px !important;
+  }
+  
+  .loginRegister {
+    margin-top: 2rem !important;
+    margin-left: 0.5rem !important;
+  }
+  
+  .registerLink {
+    text-decoration: none !important;
+    color: white !important;
+    padding-left: 0.2rem;
+  }
+  
+  .registerLink:hover {
+    color: orange !important;
+  }
+  
+  .customButtonRegister {
+    width: 100%;
+    background: transparent linear-gradient(90deg, #ffaa34 0%, #fd9f2d 100%) 0% 0%
+      no-repeat padding-box !important;
+    border: 1px solid #289944 !important ;
+    border-radius: 4px !important;
+    opacity: 1;
+  }

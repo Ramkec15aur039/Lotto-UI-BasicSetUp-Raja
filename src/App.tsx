@@ -11,8 +11,8 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 /******************************** Pages *******************************/
-import { LoginForm } from "./components/LoginForm";
-import { SignUpForm } from "./components/SignUpForm";
+import { LoginForm } from "./pages/LoginForm";
+import { SignUpForm } from "./pages/SignUpForm";
 
 /******************************** CSS *********************************/
 import "./index.css";

@@ -14,19 +14,21 @@ import { userActions } from "../actions";
 import { AppState } from "../reducers";
 import { AppActions, RegisterState } from "../types";
 
+/******************************** CSS *********************************/
+import "./loginRegister.css";
+
 const SignUpForm = () => {
-  
-  const date:any = [];
+  const date: any = [];
   for (let i = 1; i <= 31; i++) {
-    date.push(<option>{i.toString().length === 1 ? "0" + i : i }</option>);
+    date.push(<option>{i.toString().length === 1 ? "0" + i : i}</option>);
   }
 
-  const month:any = [];
+  const month: any = [];
   for (let i = 1; i <= 12; i++) {
-    month.push(<option>{i.toString().length === 1 ? "0" + i : i }</option>);
+    month.push(<option>{i.toString().length === 1 ? "0" + i : i}</option>);
   }
 
-  const year:any = [];
+  const year: any = [];
   for (let i = 1970; i <= 2021; i++) {
     year.push(<option>{i}</option>);
   }
