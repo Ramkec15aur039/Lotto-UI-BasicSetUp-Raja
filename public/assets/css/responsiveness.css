@@ -1,0 +1,168 @@
+/*---Container responsive---*/
+
+/*---Mobile---*/
+
+@media (max-width: 350px) {
+  .container {
+    max-width: 1390px !important;
+  }
+}
+
+/*---Tablets---*/
+
+@media (min-width: 250px) and (max-width: 1024px) {
+  .container {
+    max-width: 1242px !important;
+  }
+}
+
+/*---Desktop devices---*/
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1290px !important;
+  }
+}
+
+/* --------------------Navbar--------------------- */
+
+/*---Tablets and Mobile ---*/
+
+@media (min-width: 250px) and (max-width: 1024px) {
+  .ml {
+    margin-left: 0 !important;
+  }
+
+  .mr {
+    margin-right: 0 !important;
+  }
+}
+
+/* --------------------Login and Register--------------------- */
+
+/*---Tablets and Mobile ---*/
+
+@media (min-width: 250px) and (max-width: 1024px) {
+  .loginResponsive {
+    display: none;
+  }
+  .loginCustomBtn {
+    width: 100% !important;
+  }
+  .inputEmail,
+  .inputPassword {
+    width: 100%;
+  }
+  .loginFormResponsive {
+    padding-left: 3rem !important;
+  }
+  .loginCustomBtn,
+  .loginRegister {
+    display: none !important;
+  }
+  .loginCustomBtnResponsive {
+    background: transparent linear-gradient(90deg, #ffaa34 0%, #fd9f2d 100%) 0%
+      0% no-repeat padding-box !important;
+    border: 1px solid #289944 !important;
+    border-radius: 4px !important;
+    opacity: 1 !important;
+    width: 80% !important;
+    height: 40px !important;
+  }
+  .loginRegisterResponsive{
+    padding-left: 2rem;
+    margin-top: 1rem !important;
+  }
+}
+
+/*---Desktop devices---*/
+
+@media (min-width: 1024px) {
+  .loginCustomBtnResponsive,
+  .loginRegisterResponsive {
+    display: none !important;
+  }
+}
+
+/* -------------------- Content - HomePage --------------------- */
+
+/*---Tablets and Mobile ---*/
+
+@media (min-width: 250px) and (max-width: 1024px) {
+  .jackpotFont {
+    float: unset;
+    text-align: center;
+  }
+  .contentPaddingTop {
+    padding-top: 1rem;
+  }
+  .adTop,
+  .adLeft {
+    display: none;
+  }
+  #brandFont {
+    padding-left: 1rem;
+  }
+  .navbar-toggler {
+    padding-right: 2rem;
+  }
+  .btnCustom.responsive {
+    margin-bottom: 2rem;
+  }
+  .marginResponsive {
+    margin-left: 6rem !important;
+  }
+  .col-md-6.paddingMobile {
+    padding-left: 0;
+  }
+  .PreviousDraw {
+    padding-left: 1rem;
+  }
+  .ulResponsive {
+    padding-top: 1.8rem;
+  }
+  .cardResponsive {
+    text-align: center;
+  }
+  .navResponsive {
+    text-align: center;
+  }
+  .NavButtonMargin {
+    margin-left: 0 !important;
+  }
+}
+
+/* -------------------- Content - Play for Jackpot --------------------- */
+
+/*---Tablets and Mobile ---*/
+
+@media (min-width: 250px) and (max-width: 1024px) {
+  .rowPosition {
+    position: absolute !important;
+    bottom: 10px;
+  }
+  .BtnPadding {
+    padding-top: 0 !important;
+    padding-bottom: 1rem;
+  }
+  .yourBets {
+    height: 700px !important;
+  }
+  .jackpotBetUl {
+    margin-left: 1rem;
+  }
+}
+
+/* -------------------- Content - Play Jackpot bet --------------------- */
+
+/*---Tablets and Mobile ---*/
+
+@media (min-width: 250px) and (max-width: 1024px) {
+  .jackpotBetCard {
+    margin-top: 1rem !important;
+  }
+  .submitBet {
+    padding-top: 2rem !important;
+    padding-bottom: 1rem;
+  }
+}
