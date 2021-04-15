@@ -1,0 +1,19 @@
+.jackpotBetCard {
+  width: 170px;
+  height: auto;
+  border-radius: 1rem;
+  background-color: rgba(0, 128, 0, 0.623);
+  margin: auto;
+}
+.jackpotBetMargin {
+  margin-top: 3rem;
+}
+.btnCustom.jackpotBet {
+  width: 100px !important;
+  height: 35px !important;
+  font-size: 12px;
+}
+.submitBet{
+    padding-top: 8rem;
+    text-align: center;
+}

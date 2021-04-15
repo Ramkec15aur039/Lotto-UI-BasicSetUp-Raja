@@ -8,16 +8,17 @@ import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 
 /***************************** Actions ******************************/
-import { userActions } from "../actions";
+import { userActions } from "../../actions";
 
 /****************************** Types *******************************/
-import { AppState } from "../reducers";
-import { AppActions, RegisterState } from "../types";
+import { AppState } from "../../reducers";
+import { AppActions, RegisterState } from "../../types";
 
 /******************************** CSS *********************************/
-import "./loginRegister.css";
+import "../login/loginRegister.css";
 
 const SignUpForm = () => {
+
   const date: any = [];
   for (let i = 1; i <= 31; i++) {
     date.push(<option>{i.toString().length === 1 ? "0" + i : i}</option>);
@@ -203,4 +204,5 @@ const connectedSignUpForm = connect(
   mapStateToProps,
   mapDispatchToProps
 )(SignUpForm);
+
 export { connectedSignUpForm as SignUpForm };

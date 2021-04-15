@@ -1,0 +1,24 @@
+.skipButton {
+  border-radius: 2rem !important;
+  width: 160px !important;
+  height: 45px !important;
+  opacity: 1;
+  border: 1px solid #f88a20 !important;
+  color: white;
+}
+.skipButton:hover {
+  background: transparent linear-gradient(270deg, #fd9f2d 0%, #ffaa34 100%) 0%
+    0% no-repeat padding-box !important;
+}
+.displayProperty.chooseColor{
+    float: unset;
+    text-align: center;
+}
+.chooseColorRed{
+  color: red;
+  float: left;
+}
+.chooseColorBlack{
+  color: black;
+  float: right;
+}

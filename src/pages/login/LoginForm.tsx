@@ -4,20 +4,20 @@ import { bindActionCreators } from "redux";
 import { Link } from "react-router-dom";
 
 /******************************** HOC *********************************/
-import { connect } from "react-redux";  
+import { connect } from "react-redux";
 
 /***************************** Components *****************************/
 import { ThunkDispatch } from "redux-thunk";
 
 /****************************** Actions *****************************/
-import { userActions } from "../actions";
+import { userActions } from "../../actions";
 
 /****************************** Types *******************************/
-import { AppState } from "../reducers";
-import { AuthState, AppActions } from "../types";
+import { AppState } from "../../reducers";
+import { AuthState, AppActions } from "../../types";
 
 /******************************** CSS *********************************/
-import "./loginRegister.css"
+import "./loginRegister.css";
 
 const LoginForm = () => {
   return (
@@ -48,23 +48,30 @@ const LoginForm = () => {
             </div>
             <div className="row">
               <div className="col-12">
-                <button
-                  type="submit"
-                  className="btn btn-primary loginCustomBtn"
-                >
-                  Login
-                </button>
+                <Link to="/homePage">
+                  <button
+                    type="submit"
+                    className="btn btn-primary loginCustomBtn"
+                  >
+                    Login
+                  </button>
+                </Link>
                 <span className="loginRegister">
-                  New to Lotto60?<Link to="/register" className="registerLink">Register</Link>
+                  New to Lotto60?
+                  <Link to="/register" className="registerLink">
+                    Register
+                  </Link>
                 </span>
-                <button
-                  type="submit"
-                  className="btn btn-primary loginCustomBtnResponsive"
-                >
-                  Login
-                </button>
+                <Link to="/homePage">
+                  <button className="btn btn-primary loginCustomBtnResponsive">
+                    Login
+                  </button>
+                </Link>
                 <p className="loginRegisterResponsive">
-                  New to Lotto60?<Link to="/register" className="registerLink">Register</Link>
+                  New to Lotto60?
+                  <Link to="/register" className="registerLink">
+                    Register
+                  </Link>
                 </p>
               </div>
             </div>
@@ -114,4 +121,5 @@ const connectedLoginForm = connect(
   mapStateToProps,
   mapDispatchToProps
 )(LoginForm);
+
 export { connectedLoginForm as LoginForm };

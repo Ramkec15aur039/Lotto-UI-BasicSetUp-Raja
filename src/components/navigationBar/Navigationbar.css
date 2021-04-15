@@ -1,0 +1,38 @@
+.navbarBackground {
+  background: transparent
+    linear-gradient(270deg, #008cff 0%, #4233b078 100%, #01e9df74 100%) 0% 0%
+    no-repeat padding-box;
+  opacity: 1;
+  height: auto;
+}
+#brandFont {
+  color: white !important;
+}
+.navFont {
+  color: white !important;
+}
+.ml {
+  margin-left: 13rem;
+}
+.mr {
+  margin-right: 2rem;
+}
+
+.navbarCustom {
+  position: relative;
+}
+.btnCustom {
+  border-radius: 2rem !important;
+  width: 160px !important;
+  height: 45px !important;
+  opacity: 1;
+  background: transparent linear-gradient(270deg, #f88a20 0%, #ffaa34 100%) 0%
+    0% no-repeat padding-box !important;
+}
+.NavButtonMargin {
+  margin-left: 5rem;
+  border:hidden !important;
+}
+.link{
+  text-decoration: none;
+}

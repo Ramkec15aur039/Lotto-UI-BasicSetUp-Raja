@@ -11,8 +11,12 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 /******************************** Pages *******************************/
-import { LoginForm } from "./pages/LoginForm";
-import { SignUpForm } from "./pages/SignUpForm";
+import { LoginForm } from "./pages/login/LoginForm";
+import { SignUpForm } from "./pages/register/SignUpForm";
+import HomePage from "./pages/homePage";
+import PlaceYourJackpotBet from "./pages/placeYourJackpotBet";
+import JackpotBet from "./pages/jackpotBet";
+import ChooseColor from "./pages/chooseColor";
 
 /******************************** CSS *********************************/
 import "./index.css";
@@ -35,6 +39,26 @@ const App: React.FC = () => {
             <Switch>
               <Route exact path="/" render={() => <LoginForm />} />
               <Route exact path="/register" render={() => <SignUpForm />} />
+              <Route
+                exact
+                path="/homePage"
+                render={() => <HomePage />}
+              />
+              <Route
+                exact
+                path="/PlaceYourJackpotBet"
+                render={() => <PlaceYourJackpotBet />}
+              />
+              <Route
+                exact
+                path="/JackpotBet"
+                render={() => <JackpotBet />}
+              />
+              <Route
+                exact
+                path="/ChooseColor"
+                render={() => <ChooseColor />}
+              />
             </Switch>
           </div>
         </MuiThemeProvider>
