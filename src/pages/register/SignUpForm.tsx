@@ -18,7 +18,6 @@ import { AppActions, RegisterState } from "../../types";
 import "../login/loginRegister.css";
 
 const SignUpForm = () => {
-
   const date: any = [];
   for (let i = 1; i <= 31; i++) {
     date.push(<option>{i.toString().length === 1 ? "0" + i : i}</option>);
@@ -143,12 +142,14 @@ const SignUpForm = () => {
           </form>
           <div className="row">
             <div className="col-md-6 mt-4">
-              <button
-                type="submit"
-                className="btn btn-primary customButtonRegister"
-              >
-                Register
-              </button>
+              <Link className="registerLink" to="/">
+                <button
+                  type="submit"
+                  className="btn btn-primary customButtonRegister"
+                >
+                  Register
+                </button>
+              </Link>
             </div>
             <div className="col-md-6">
               <p className="pt-4">

@@ -75,7 +75,7 @@ export default function PlayForJackpot() {
             </div>
             <div className="row">
               <div className="col-12 submitBet">
-                <Link to="/">
+                <Link to="/homePage">
                   <Button variant="primary" className="btnCustom">
                     Submit Bet
                   </Button>
