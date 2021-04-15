@@ -97,7 +97,7 @@ const SignUpForm = () => {
                 <input
                   type="text"
                   className="form-control"
-                  placeholder="First name"
+                  placeholder="Phone Number"
                 />
               </div>
               <div className="col-md-6 mt-3">
