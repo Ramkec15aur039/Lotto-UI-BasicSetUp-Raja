@@ -23,7 +23,7 @@ export default function PlayForJackpot() {
           <div className="col-md-7 colPadding">
             <div className="row">
               <div className="col-12 text-center">
-                <h3 className="text-center">Try Your Luck With More Games</h3>
+                <h3 className="text-center h3-Responsive">Try Your Luck With More Games</h3>
               </div>
             </div>
             <div className="row jackpotBetMargin">

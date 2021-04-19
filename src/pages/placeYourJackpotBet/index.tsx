@@ -10,11 +10,10 @@ import { Link } from "react-router-dom";
 import "./placeYourJackpotBet.css";
 
 export default function PlayForJackpot() {
-
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  
+
   return (
     <div>
       <NavgiationBar />
@@ -23,60 +22,57 @@ export default function PlayForJackpot() {
           <div className="col-md-7 colPadding">
             <div className="row">
               <div className="col-12 text-center">
-                <h3 className="text-center">Place Your Jackpot Bet</h3>
+                <h3 className="text-center h3-Responsive">Place Your Jackpot Bet</h3>
               </div>
             </div>
-            <div className="row">
-              <div className="col-md-12">
-                <ul className="jackpotBetUl text-center">
-                  <li className="mt-3">
-                    <i className="fas fa fa-circle baseballJackpotBet baseballGrey">
-                      <div className="baseBallNumber">
-                        <span className="ml-1 pt-2">0</span>
-                      </div>
-                    </i>
-                  </li>
-                  <li>
-                    <i className="fas fa fa-circle baseballJackpotBet baseballGrey">
-                      <div className="baseBallNumber">
-                        <span className="ml-1 pt-2">5</span>
-                      </div>
-                    </i>
-                  </li>
-                  <li>
-                    <i className="fas fa fa-circle baseballJackpotBet baseballGrey">
-                      <div className="baseBallNumber">
-                        <span>15</span>
-                      </div>
-                    </i>
-                  </li>
-                  <li>
-                    <i className="fas fa fa-circle baseballJackpotBet baseballGrey">
-                      <div className="baseBallNumber">
-                        <span className="ml-1 pt-2">8</span>
-                      </div>
-                    </i>
-                  </li>
-                  <li>
-                    <i className="fas fa fa-circle baseballJackpotBet baseballGrey">
-                      <div className="baseBallNumber">
-                        <span>25</span>
-                      </div>
-                    </i>
-                  </li>
-                  <li>
-                    <i className="fas fa fa-circle baseballJackpotBet baseballGreen">
-                      <div className="baseBallNumber">
-                        <span className="ml-1 pt-2">7</span>
-                      </div>
-                    </i>
-                  </li>
-                </ul>
+            <div className="jackpotBetUl text-center row">
+              <div className="col-2">
+                <i className="fas fa fa-circle baseballJackpotBet baseballGrey">
+                  <div className="placeYourJackpotBetNumber">
+                    <span className="ml-1 pt-2">0</span>
+                  </div>
+                </i>
+              </div>
+              <div className="col-2">
+                <i className="fas fa fa-circle baseballJackpotBet baseballGrey">
+                  <div className="placeYourJackpotBetNumber">
+                    <span className="ml-1 pt-2">5</span>
+                  </div>
+                </i>
+              </div>
+              <div className="col-2">
+                <i className="fas fa fa-circle baseballJackpotBet baseballGrey">
+                  <div className="placeYourJackpotBetNumber">
+                    <span>15</span>
+                  </div>
+                </i>
+              </div>
+              <div className="col-2">
+                <i className="fas fa fa-circle baseballJackpotBet baseballGrey">
+                  <div className="placeYourJackpotBetNumber">
+                    <span className="ml-1 pt-2">8</span>
+                  </div>
+                </i>
+              </div>
+              <div className="col-2">
+                <i className="fas fa fa-circle baseballJackpotBet baseballGrey">
+                  <div className="placeYourJackpotBetNumber">
+                    <span>25</span>
+                  </div>
+                </i>
+              </div>
+              <div className="col-2">
+                <i className="fas fa fa-circle baseballJackpotBet baseballGreen">
+                  <div className="placeYourJackpotBetNumber">
+                    <span className="ml-1 pt-2">7</span>
+                  </div>
+                </i>
               </div>
             </div>
+
             <div className="row">
               <div className="col-12 text-center">
-                <Button variant="primary" className="btnCustom responsive mt-3">
+                <Button variant="primary" className="btnCustom responsive mt-5">
                   Add Row
                 </Button>
               </div>
@@ -84,7 +80,7 @@ export default function PlayForJackpot() {
             <div className="row">
               <div className="col-12 BtnPadding">
                 <Link to="/JackpotBet">
-                  <Button variant="primary" className="btnCustom">
+                  <Button variant="primary" className="btnCustom responsive">
                     Continue
                   </Button>
                 </Link>

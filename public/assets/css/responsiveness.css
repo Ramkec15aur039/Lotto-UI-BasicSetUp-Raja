@@ -106,9 +106,6 @@
   .navbar-toggler {
     padding-right: 2rem;
   }
-  .btnCustom.responsive {
-    margin-bottom: 2rem;
-  }
   .col-md-6.paddingMobile {
     padding-left: 0;
   }
@@ -151,7 +148,7 @@
   }
   .price {
     font-size: 19px !important;
-}
+  }
 }
 
 /* -------------------- Content - Place Your Jackpot Bet  --------------------- */
@@ -171,7 +168,28 @@
     height: 700px !important;
   }
   .jackpotBetUl {
-    margin-left: 1rem;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .baseballJackpotBet {
+    font-size: 50px !important;
+  }
+  .baseballJackpotBet > .placeYourJackpotBetNumber {
+    font-size: 16px !important;
+    top: 30% !important;
+    left: 50% !important;
+    width: 25px !important;
+    height: 25px !important;
+  }
+  .h3-Responsive {
+    font-size: 16px !important;
+  }
+  .btnCustom.responsive {
+    margin-bottom: 8rem;
+    transform: scale(0.8);
+  }
+  .jackpotBetMargin {
+    margin-top: 0 !important;
   }
 }
 
@@ -186,6 +204,9 @@
   .submitBet {
     padding-top: 2rem !important;
     padding-bottom: 1rem;
+  }
+  .submitBet{
+    transform: scale(0.8);
   }
 }
 
