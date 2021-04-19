@@ -12,6 +12,7 @@
   opacity: 0.3;
   height: 73rem;
 }
+
 .content-section {
   opacity: 1;
   color: #ffffff;
@@ -67,6 +68,10 @@
 
 .btnMargin {
   margin-left: 1rem;
+}
+
+.homeFontResponsive{
+  padding-top: 2rem;
 }
 
 /* ---------- Jackpot Ball-Design ------- */

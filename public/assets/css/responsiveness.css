@@ -69,7 +69,7 @@
     width: 80% !important;
     height: 40px !important;
   }
-  .loginRegisterResponsive{
+  .loginRegisterResponsive {
     padding-left: 2rem;
     margin-top: 1rem !important;
   }
@@ -109,9 +109,6 @@
   .btnCustom.responsive {
     margin-bottom: 2rem;
   }
-  .marginResponsive {
-    margin-left: 6rem !important;
-  }
   .col-md-6.paddingMobile {
     padding-left: 0;
   }
@@ -130,9 +127,34 @@
   .NavButtonMargin {
     margin-left: 0 !important;
   }
+  .col-2.scaleMedium {
+    transform: scale(0.5);
+  }
+  .homeFontResponsive {
+    font-size: 12px;
+    padding-top: 3rem !important;
+    padding-left: 2rem !important;
+  }
+  .homeBtnResponsive {
+    transform: scale(0.8);
+    margin-top: -55px;
+  }
+  .contentResponsiveHome {
+    transform: scale(0.8);
+    overflow-x: hidden;
+  }
+  .textCenterResponsive {
+    text-align: center !important;
+  }
+  .contentPaddingTop {
+    padding-top: 1.5rem !important;
+  }
+  .price {
+    font-size: 19px !important;
+}
 }
 
-/* -------------------- Content - Play for Jackpot --------------------- */
+/* -------------------- Content - Place Your Jackpot Bet  --------------------- */
 
 /*---Tablets and Mobile ---*/
 
@@ -153,7 +175,7 @@
   }
 }
 
-/* -------------------- Content - Play Jackpot bet --------------------- */
+/* -------------------- Content - Jackpot bet --------------------- */
 
 /*---Tablets and Mobile ---*/
 
@@ -164,5 +186,39 @@
   .submitBet {
     padding-top: 2rem !important;
     padding-bottom: 1rem;
+  }
+}
+
+/* -------------------- Content - Jackpot bet --------------------- */
+
+/*---Tablets and Mobile ---*/
+
+@media (min-width: 250px) and (max-width: 1024px) {
+  .jackpotBetUl {
+    transform: scale(0.7);
+  }
+}
+
+/* -------------------- Content - Play for Jackpot --------------------- */
+
+/*---Tablets and Mobile ---*/
+
+@media (min-width: 250px) and (max-width: 1024px) {
+  .baseballJackpotBet > .baseBallNumber.PlayForJacpotDiv {
+    left: 35% !important;
+  }
+  .li-Responsive-PlayForJackpot {
+    margin-right: 10px;
+  }
+  .playForJackpotMain {
+    padding-left: 1.5rem !important;
+  }
+  .playForJackpotMain p {
+    text-align: center;
+  }
+  .col-md-5.col-md-playForJackPot {
+    margin-left: auto;
+    margin-right: auto;
+    width: 61%;
   }
 }

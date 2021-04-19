@@ -17,6 +17,7 @@ import HomePage from "./pages/homePage";
 import PlaceYourJackpotBet from "./pages/placeYourJackpotBet";
 import JackpotBet from "./pages/jackpotBet";
 import ChooseColor from "./pages/chooseColor";
+import PlayForJackpot from "./pages/playForJackpot"
 
 /******************************** CSS *********************************/
 import "./index.css";
@@ -43,6 +44,11 @@ const App: React.FC = () => {
                 exact
                 path="/homePage"
                 render={() => <HomePage />}
+              />
+              <Route
+                exact
+                path="/playForJackpot"
+                render={() => <PlayForJackpot />}
               />
               <Route
                 exact

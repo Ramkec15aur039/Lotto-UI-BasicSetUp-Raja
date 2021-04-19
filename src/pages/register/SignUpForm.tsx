@@ -17,6 +17,9 @@ import { AppActions, RegisterState } from "../../types";
 /******************************** CSS *********************************/
 import "../login/loginRegister.css";
 
+/****************************** Images *******************************/
+import LoginImage from "../../assets/images/login-image.png"
+
 const SignUpForm = () => {
   const date: any = [];
   for (let i = 1; i <= 31; i++) {
@@ -163,7 +166,7 @@ const SignUpForm = () => {
         </div>
         <div className="col-md-5 loginResponsive">
           <img
-            src="./assets/images/login-image.png"
+            src={LoginImage}
             alt="lotto"
             width="500px"
             height="600px "

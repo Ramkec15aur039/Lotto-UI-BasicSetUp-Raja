@@ -19,6 +19,9 @@ import { AuthState, AppActions } from "../../types";
 /******************************** CSS *********************************/
 import "./loginRegister.css";
 
+/****************************** Images *******************************/
+import LoginImage from "../../assets/images/login-image.png"
+
 const LoginForm = () => {
   return (
     <div className="container">
@@ -79,7 +82,7 @@ const LoginForm = () => {
         </div>
         <div className="col-md-6 loginResponsive">
           <img
-            src="./assets/images/login-image.png"
+            src={LoginImage}
             alt="lotto"
             width="500px"
             height="600px "

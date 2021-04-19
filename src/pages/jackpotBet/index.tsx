@@ -11,11 +11,10 @@ import "../placeYourJackpotBet/placeYourJackpotBet.css";
 import "./jackpotBet.css";
 
 export default function PlayForJackpot() {
-
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  
+
   return (
     <div>
       <NavgiationBar />
@@ -28,6 +27,7 @@ export default function PlayForJackpot() {
               </div>
             </div>
             <div className="row jackpotBetMargin">
+              <div className="col-md-2"></div>
               <div className="col-md-4">
                 <div className="jackpotBetCard p-3 text-center">
                   <p>Red or Black</p>
@@ -58,6 +58,10 @@ export default function PlayForJackpot() {
                   </Button>
                 </div>
               </div>
+              <div className="col-md-2"></div>
+            </div>
+            <div className="row jackpotBetMargin">
+            <div className="col-md-2"></div>
               <div className="col-md-4">
                 <div className="jackpotBetCard p-3 text-center">
                   <p>Over or Under</p>
@@ -72,6 +76,21 @@ export default function PlayForJackpot() {
                   </Button>
                 </div>
               </div>
+              <div className="col-md-4">
+                <div className="jackpotBetCard p-3 text-center">
+                  <p>Over or Under</p>
+                  <small>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  </small>
+                  <Button
+                    variant="primary"
+                    className="btnCustom jackpotBet mt-2"
+                  >
+                    Play
+                  </Button>
+                </div>
+              </div>
+              <div className="col-md-2"></div>
             </div>
             <div className="row">
               <div className="col-12 submitBet">

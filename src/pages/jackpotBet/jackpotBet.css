@@ -2,7 +2,10 @@
   width: 170px;
   height: auto;
   border-radius: 1rem;
-  background-color: rgba(0, 128, 0, 0.623);
+  background-image: url("../../assets/images/jackpotBet-card-background.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
   margin: auto;
 }
 .jackpotBetMargin {

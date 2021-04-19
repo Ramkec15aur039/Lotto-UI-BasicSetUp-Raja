@@ -36,12 +36,12 @@ export default function NavgiationBar() {
               Support
             </Nav.Link>
             <Nav.Link href="#link" className="mr navFont">
-              Fund
+              Profile
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
         <Navbar.Collapse className="NavButtonMargin navbar-toggler navResponsive">
-          <Link to="/PlaceYourJackpotBet" className="link">
+          <Link to="/playForJackpot" className="link">
             <Button variant="primary" className="btnCustom mr-lg-3">
               Play For Jackpot
             </Button>
