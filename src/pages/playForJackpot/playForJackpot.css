@@ -39,4 +39,7 @@ input[type="datetime-local"]::-webkit-calendar-picker-indicator {
 }
 .PlayForJackpotUl{
   list-style: none;
+  padding-left: 0;
+  margin-top: 1rem;
+  margin-bottom: 2rem !important;
 }
