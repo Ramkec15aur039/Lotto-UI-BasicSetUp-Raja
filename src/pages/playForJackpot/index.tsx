@@ -26,37 +26,37 @@ export default function index() {
             </div>
             <div className="row">
               <div className="col-12">
-                <ul className="jackpotBetUl padding row">
+                <ul className="PlayForJackpotUl row">
                   <li className="col-2 li-Responsive-PlayForJackpot">
-                    <i className="fas fa fa-circle baseballJackpotBet baseballGrey">
+                    <i className="fas fa fa-circle baseballPlayForJackpot baseballGrey">
                       <div className="baseBallNumber PlayForJacpotDiv">
                         <span className="PlayForJacpotNumber">$1</span>
                       </div>
                     </i>
                   </li>
                   <li className="col-2 li-Responsive-PlayForJackpot">
-                    <i className="fas fa fa-circle baseballJackpotBet baseballGrey">
+                    <i className="fas fa fa-circle baseballPlayForJackpot baseballGrey">
                       <div className="baseBallNumber PlayForJacpotDiv">
                         <span className="PlayForJacpotNumber">$2</span>
                       </div>
                     </i>
                   </li>
                   <li className="col-2 li-Responsive-PlayForJackpot">
-                    <i className="fas fa fa-circle baseballJackpotBet baseballGrey">
+                    <i className="fas fa fa-circle baseballPlayForJackpot baseballGrey">
                       <div className="baseBallNumber PlayForJacpotDiv">
                         <span className="PlayForJacpotNumber">$3</span>
                       </div>
                     </i>
                   </li>
                   <li className="col-2 li-Responsive-PlayForJackpot">
-                    <i className="fas fa fa-circle baseballJackpotBet baseballGrey">
+                    <i className="fas fa fa-circle baseballPlayForJackpot baseballGrey">
                       <div className="baseBallNumber PlayForJacpotDiv">
                         <span className="PlayForJacpotNumber">$4</span>
                       </div>
                     </i>
                   </li>
                   <li className="col-2 li-Responsive-PlayForJackpot">
-                    <i className="fas fa fa-circle baseballJackpotBet baseballGrey">
+                    <i className="fas fa fa-circle baseballPlayForJackpot baseballGrey">
                       <div className="baseBallNumber PlayForJacpotDiv">
                         <span className="PlayForJacpotNumber">$5</span>
                       </div>
