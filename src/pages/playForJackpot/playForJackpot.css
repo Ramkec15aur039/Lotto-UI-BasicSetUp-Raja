@@ -7,8 +7,8 @@
 }
 .baseballPlayForJackpot > .baseBallNumber.PlayForJacpotDiv {
   position: absolute;
-  top: 20%;
-  left: 17%;
+  top: 18%;
+  left: 18%;
   width: 45px;
   height: 45px;
   border-radius: 50%;
@@ -16,8 +16,8 @@
   background-color: white;
 }
 .PlayForJacpotNumber {
-  font-size: 28px;
-  padding-left: 0.5rem;
+  font-size: 25px;
+  padding-left: 0.6rem;
   padding-top: 0.5rem;
   position: absolute;
 }

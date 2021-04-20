@@ -12,11 +12,10 @@ import "../jackpotBet/jackpotBet.css";
 import "./chooseColor.css";
 
 export default function ChooseColor() {
-
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  
+
   return (
     <div>
       <NavgiationBar />
@@ -28,29 +27,27 @@ export default function ChooseColor() {
                 <h3 className="text-center">Choose Colors</h3>
               </div>
             </div>
-            <div className="row jackpotBetMargin">
-              <div className="col-md-12">
-                <ul className="displayProperty chooseColor">
-                  <li className="mt-3">
+            <div className="row">
+              <div className="col-12">
+                <ul className="chooseColorUl row">
+                  <li className="col-2 li-Responsive-PlayForJackpot chooseColorPosition">
                     <i className="fa fa-circle chooseColorRed"></i>
                     <i className="fa fa-circle chooseColorBlack"></i>
-                    <i className="fas fa fa-circle baseballJackpotBet baseballGrey"></i>
+                    <i className="fas fa fa-circle baseballPlayForJackpot baseballGrey"></i>
                   </li>
-                  <li>
-                    <i className="fas fa fa-circle baseballJackpotBet baseballGrey"></i>
+                  <li className="col-2 li-Responsive-PlayForJackpot">
+                    <i className="fas fa fa-circle baseballPlayForJackpot baseballGrey"></i>
                   </li>
-                  <li>
-                    <i className="fas fa fa-circle baseballJackpotBet baseballGrey"></i>
+                  <li className="col-2 li-Responsive-PlayForJackpot">
+                    <i className="fas fa fa-circle baseballPlayForJackpot baseballGrey"></i>
                   </li>
-                  <li>
-                    <i className="fas fa fa-circle baseballJackpotBet baseballGrey"></i>
+                  <li className="col-2 li-Responsive-PlayForJackpot">
+                    <i className="fas fa fa-circle baseballPlayForJackpot baseballGrey"></i>
                   </li>
-                  <li>
-                    <i className="fas fa fa-circle baseballJackpotBet baseballGrey"></i>
+                  <li className="col-2 li-Responsive-PlayForJackpot">
+                    <i className="fas fa fa-circle baseballPlayForJackpot baseballGrey"></i>
                   </li>
-                  <li>
-                    <i className="fas fa fa-circle baseballJackpotBet baseballGrey"></i>
-                  </li>
+                  <li className="col-2"></li>
                 </ul>
               </div>
             </div>

@@ -17,8 +17,22 @@
 .chooseColorRed{
   color: red;
   float: left;
+  position: absolute;
+  top: -1rem;
 }
 .chooseColorBlack{
   color: black;
   float: right;
+  position: absolute;
+  top: -1rem;
+  right: 1.5rem;
+}
+.chooseColorUl{
+  list-style: none;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem !important;
+}
+.chooseColorPosition{
+  position: relative;
 }

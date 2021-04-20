@@ -69,7 +69,7 @@ export default function index() {
             <div className="row">
               <div className="col-md-5 col-md-playForJackPot">
                 <input
-                  type="password"
+                  type="text"
                   className="form-control playForJackpotInput"
                   id="exampleInputPassword1"
                   placeholder="Enter your bet amount"
@@ -97,9 +97,9 @@ export default function index() {
               </div>
             </div>
             <div className="row">
-              <div className="col-12 mt-5">
+              <div className="col-12 mt-5 textCenterResponsive">
                 <Link to="/PlaceYourJackpotBet">
-                  <Button variant="primary" className="btnCustom">
+                  <Button variant="primary" className="btnCustom responsive">
                     Place Bet
                   </Button>
                 </Link>
