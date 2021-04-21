@@ -1,5 +1,5 @@
 /****************************** Libraries ********************************/
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 /****************************** Components *******************************/
 import NavgiationBar from "../../components/navigationBar";
@@ -10,6 +10,100 @@ import { Link } from "react-router-dom";
 import "./placeYourJackpotBet.css";
 
 export default function PlayForJackpot() {
+  const [rows, setRows] = useState(1);
+  const addRows: any = [];
+  console.log("AddRows: ", addRows);
+
+  useEffect(() => {
+    const input1: any = document.querySelector("#limit");
+    const settings1 = {
+      maxLen: 2,
+    };
+    input1.addEventListener("keydown", function (event: any) {
+      const len = event.target.innerText.trim().length;
+
+      if (len >= settings1.maxLen) {
+        event.preventDefault();
+        return false;
+      }
+    });
+  }, []);
+
+  for (let i = 1; i <= rows; i++) {
+    addRows.push(
+      <div className="jackpotBetUl text-center row">
+        <div className="col-2">
+          <i className="fas fa fa-circle baseballJackpotBet baseballGrey">
+            <div className="placeYourJackpotBetNumber">
+              <span
+                contentEditable="true"
+                id="limit"
+                data-input-length="2"
+                className="pt-2"
+              >
+                0
+              </span>
+            </div>
+          </i>
+        </div>
+        <div className="col-2">
+          <i className="fas fa fa-circle baseballJackpotBet baseballGrey">
+            <div className="placeYourJackpotBetNumber">
+              <span contentEditable="true" id="limit" className="pt-2">
+                5
+              </span>
+            </div>
+          </i>
+        </div>
+        <div className="col-2">
+          <i className="fas fa fa-circle baseballJackpotBet baseballGrey">
+            <div className="placeYourJackpotBetNumber">
+              <span contentEditable="true" id="limit">
+                15
+              </span>
+            </div>
+          </i>
+        </div>
+        <div className="col-2">
+          <i className="fas fa fa-circle baseballJackpotBet baseballGrey">
+            <div className="placeYourJackpotBetNumber">
+              <span contentEditable="true" id="limit" className="pt-2">
+                8
+              </span>
+            </div>
+          </i>
+        </div>
+        <div className="col-2">
+          <i className="fas fa fa-circle baseballJackpotBet baseballGrey">
+            <div className="placeYourJackpotBetNumber">
+              <span contentEditable="true" id="limit">
+                25
+              </span>
+            </div>
+          </i>
+        </div>
+        <div className="col-2 deleteIconPosition">
+          <i className="fas fa fa-circle baseballJackpotBet baseballGreen">
+            <div className="placeYourJackpotBetNumber">
+              <span contentEditable="true" id="limit" className="pt-2">
+                7
+              </span>
+            </div>
+          </i>
+          {rows == 1 ? null : (
+            <i
+              className="far fa-trash-alt deleteIcon"
+              onClick={() => {
+                setRows(rows - 1);
+              }}
+              style={{ color: "red", cursor: "pointer" }}
+            ></i>
+          )}
+        </div>
+      </div>
+    );
+  }
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -22,57 +116,21 @@ export default function PlayForJackpot() {
           <div className="col-md-7 colPadding">
             <div className="row">
               <div className="col-12 text-center">
-                <h3 className="text-center h3-Responsive">Place Your Jackpot Bet</h3>
+                <h3 className="text-center h3-Responsive">
+                  Place Your Jackpot Bet
+                </h3>
               </div>
             </div>
-            <div className="jackpotBetUl text-center row">
-              <div className="col-2">
-                <i className="fas fa fa-circle baseballJackpotBet baseballGrey">
-                  <div className="placeYourJackpotBetNumber">
-                    <span className="ml-1 pt-2">0</span>
-                  </div>
-                </i>
-              </div>
-              <div className="col-2">
-                <i className="fas fa fa-circle baseballJackpotBet baseballGrey">
-                  <div className="placeYourJackpotBetNumber">
-                    <span className="ml-1 pt-2">5</span>
-                  </div>
-                </i>
-              </div>
-              <div className="col-2">
-                <i className="fas fa fa-circle baseballJackpotBet baseballGrey">
-                  <div className="placeYourJackpotBetNumber">
-                    <span>15</span>
-                  </div>
-                </i>
-              </div>
-              <div className="col-2">
-                <i className="fas fa fa-circle baseballJackpotBet baseballGrey">
-                  <div className="placeYourJackpotBetNumber">
-                    <span className="ml-1 pt-2">8</span>
-                  </div>
-                </i>
-              </div>
-              <div className="col-2">
-                <i className="fas fa fa-circle baseballJackpotBet baseballGrey">
-                  <div className="placeYourJackpotBetNumber">
-                    <span>25</span>
-                  </div>
-                </i>
-              </div>
-              <div className="col-2">
-                <i className="fas fa fa-circle baseballJackpotBet baseballGreen">
-                  <div className="placeYourJackpotBetNumber">
-                    <span className="ml-1 pt-2">7</span>
-                  </div>
-                </i>
-              </div>
-            </div>
-
+            {addRows}
             <div className="row">
               <div className="col-12 text-center">
-                <Button variant="primary" className="btnCustom responsive mt-5">
+                <Button
+                  variant="primary"
+                  onClick={() => {
+                    setRows(rows + 1);
+                  }}
+                  className="btnCustom responsive mt-5"
+                >
                   Add Row
                 </Button>
               </div>

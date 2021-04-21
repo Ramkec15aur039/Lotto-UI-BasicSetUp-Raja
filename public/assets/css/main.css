@@ -200,3 +200,7 @@ html {
 .stage.scaleSmall {
   transform: scale(0.5);
 }
+
+[contenteditable]:focus {
+  outline: 0px solid transparent;
+}

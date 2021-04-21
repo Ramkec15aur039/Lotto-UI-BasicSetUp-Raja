@@ -25,7 +25,7 @@
       { "extensions": [".js", ".jsx", ".ts", ".tsx"] }
     ],
     "no-console": [
-      "error",
+      "warn",
       {
         "allow": ["warn", "error"]
       }

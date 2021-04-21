@@ -191,6 +191,9 @@
   .jackpotBetMargin {
     margin-top: 0 !important;
   }
+  .deleteIcon{
+    right: -40px !important;
+  }
 }
 
 /* -------------------- Content - Jackpot bet --------------------- */
