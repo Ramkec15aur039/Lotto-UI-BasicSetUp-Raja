@@ -9,6 +9,9 @@ import { Link } from "react-router-dom";
 /********************************* CSS **********************************/
 import "./placeYourJackpotBet.css";
 
+/********************************* Image **********************************/
+// import TestSVG from "../../assets/images/Test.svg"
+
 export default function PlayForJackpot() {
   const [rows, setRows] = useState(1);
   const addRows: any = [];
@@ -33,7 +36,7 @@ export default function PlayForJackpot() {
     addRows.push(
       <div className="jackpotBetUl text-center row">
         <div className="col-2">
-          <i className="fas fa fa-circle baseballJackpotBet baseballGrey">
+          <div className="background-PlaceYourJackpotBet baseballJackpotBet">
             <div className="placeYourJackpotBetNumber">
               <span
                 contentEditable="true"
@@ -44,52 +47,52 @@ export default function PlayForJackpot() {
                 0
               </span>
             </div>
-          </i>
+          </div>
         </div>
         <div className="col-2">
-          <i className="fas fa fa-circle baseballJackpotBet baseballGrey">
+          <div className="background-PlaceYourJackpotBet baseballJackpotBet">
             <div className="placeYourJackpotBetNumber">
               <span contentEditable="true" id="limit" className="pt-2">
                 5
               </span>
             </div>
-          </i>
+          </div>
         </div>
         <div className="col-2">
-          <i className="fas fa fa-circle baseballJackpotBet baseballGrey">
+          <div className="background-PlaceYourJackpotBet baseballJackpotBet">
             <div className="placeYourJackpotBetNumber">
               <span contentEditable="true" id="limit">
                 15
               </span>
             </div>
-          </i>
+          </div>
         </div>
         <div className="col-2">
-          <i className="fas fa fa-circle baseballJackpotBet baseballGrey">
+          <div className="background-PlaceYourJackpotBet baseballJackpotBet">
             <div className="placeYourJackpotBetNumber">
               <span contentEditable="true" id="limit" className="pt-2">
                 8
               </span>
             </div>
-          </i>
+          </div>
         </div>
         <div className="col-2">
-          <i className="fas fa fa-circle baseballJackpotBet baseballGrey">
+          <div className="background-PlaceYourJackpotBet baseballJackpotBet">
             <div className="placeYourJackpotBetNumber">
               <span contentEditable="true" id="limit">
                 25
               </span>
             </div>
-          </i>
+          </div>
         </div>
         <div className="col-2 deleteIconPosition">
-          <i className="fas fa fa-circle baseballJackpotBet baseballGreen">
+          <div className="background-PlaceYourJackpotBet-green baseballJackpotBet">
             <div className="placeYourJackpotBetNumber">
               <span contentEditable="true" id="limit" className="pt-2">
                 7
               </span>
             </div>
-          </i>
+          </div>
           {rows == 1 ? null : (
             <i
               className="far fa-trash-alt deleteIcon"
@@ -160,46 +163,46 @@ export default function PlayForJackpot() {
                       <div className="col-12">
                         <ul className="PreviousDraw paddingLeft">
                           <li className="mt-3">
-                            <i className="fas fa fa-circle baseballJackpotBet mediumSize baseballGrey">
+                            <div className="background-PlaceYourJackpotBet mediumSize baseballJackpotBet">
                               <div className="baseBallNumberMediumSize">
                                 <span className="ml-1 pt-2">0</span>
                               </div>
-                            </i>
+                            </div>
                           </li>
                           <li>
-                            <i className="fas fa fa-circle baseballJackpotBet mediumSize baseballGrey">
+                            <div className="background-PlaceYourJackpotBet mediumSize baseballJackpotBet">
                               <div className="baseBallNumberMediumSize">
                                 <span className="ml-1 pt-2">5</span>
                               </div>
-                            </i>
+                            </div>
                           </li>
                           <li>
-                            <i className="fas fa fa-circle baseballJackpotBet mediumSize baseballGrey">
+                            <div className="background-PlaceYourJackpotBet mediumSize baseballJackpotBet">
                               <div className="baseBallNumberMediumSize">
                                 <span>15</span>
                               </div>
-                            </i>
+                            </div>
                           </li>
                           <li>
-                            <i className="fas fa fa-circle baseballJackpotBet mediumSize baseballGrey">
+                            <div className="background-PlaceYourJackpotBet mediumSize baseballJackpotBet">
                               <div className="baseBallNumberMediumSize">
                                 <span className="ml-1 pt-2">8</span>
                               </div>
-                            </i>
+                            </div>
                           </li>
                           <li>
-                            <i className="fas fa fa-circle baseballJackpotBet mediumSize baseballGrey">
+                            <div className="background-PlaceYourJackpotBet mediumSize baseballJackpotBet">
                               <div className="baseBallNumberMediumSize">
                                 <span>25</span>
                               </div>
-                            </i>
+                            </div>
                           </li>
                           <li>
-                            <i className="fas fa fa-circle baseballJackpotBet mediumSize baseballGreen">
+                            <div className="background-PlaceYourJackpotBet-green mediumSize baseballJackpotBet">
                               <div className="baseBallNumberMediumSize">
                                 <span className="ml-1 pt-2">7</span>
                               </div>
-                            </i>
+                            </div>
                           </li>
                         </ul>
                       </div>

@@ -15,9 +15,6 @@
   opacity: 0.5;
   padding-left: 2rem;
 }
-.baseballJackpotBet.mediumSize {
-  font-size: 35px !important;
-}
 .PreviousDraw.paddingLeft {
   padding-left: 0;
 }
@@ -46,7 +43,7 @@
 }
 .baseballJackpotBet > .baseBallNumberMediumSize {
   color: black;
-  font-size: 13px;
+  font-size: 10px;
   font-weight: bold;
   position: absolute;
   top: 30%;
@@ -73,4 +70,23 @@
   background: none;
   cursor: none;
   border: none;
+}
+.background-PlaceYourJackpotBet{
+  background-image: url("../../assets/images/ball-palce-your-jackpotbet.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70px;
+  width: 70px;
+}
+.background-PlaceYourJackpotBet-green{
+  background-image: url("../../assets/images/ball-palce-your-jackpotbet-green.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70px;
+  width: 70px;
+}
+
+.background-PlaceYourJackpotBet.mediumSize, .background-PlaceYourJackpotBet-green.mediumSize {
+  height: 35px !important;
+  width: 35px !important;
 }
