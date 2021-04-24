@@ -1,11 +1,8 @@
-/******************************** Constants *********************************/
 import {
   USER_REGISTER_FAILURE,
   USER_REGISTER_REQUEST,
   USER_REGISTER_SUCCESS,
 } from "../constants";
-
-/********************************** Types ***********************************/
 import { RegisterState, RegisterActionTypes } from "../types";
 
 const initState: RegisterState = {};

@@ -1,14 +1,11 @@
-/******************************** Types *********************************/
 import { User } from "../types";
 
 const login = ({
   email,
   password,
-  remember = false,
 }: {
   email: string;
   password: string;
-  remember?: boolean;
 }): Promise<User> => {
   const config: RequestInit = {
     method: "POST",
@@ -18,27 +15,35 @@ const login = ({
     headers: {
       "Content-Type": "application/json",
     },
-    redirect: "follow",
-    referrer: "no-referrer",
+    // redirect: "follow",
+    // referrer: "no-referrer",
     body: JSON.stringify({ email, password }),
   };
-  return fetch("http://localhost:3000/user/login", config)
+  return fetch("http://localhost:3030/api/v1/login", config)
     .then(handleResponse)
     .then((user: User) => {
-      remember
-        ? localStorage.setItem("user", JSON.stringify(user))
-        : sessionStorage.setItem("user", JSON.stringify(user));
+      console.log("user",user);
+      //for local storage
+         localStorage.setItem("user", JSON.stringify(user));
+       //for session storage  
+         sessionStorage.setItem("user", JSON.stringify(user));
       return user;
     });
 };
 
 function register({
-  fullName,
+  firstName,
+  lastName,
   email,
+  phone,
+  dob,
   password,
 }: {
-  fullName: string;
+  firstName: string;
+  lastName: string;
   email: string;
+  phone:string;
+  dob:string;
   password: string;
 }) {
   const config: RequestInit = {
@@ -51,11 +56,11 @@ function register({
     },
     redirect: "follow",
     referrer: "no-referrer",
-    body: JSON.stringify({ fullName, email, password }),
+    body: JSON.stringify({ firstName,lastName,phone,password,email,dob }),
   };
-  return fetch("http://localhost:3000/user", config).then(handleResponse);
+  return fetch("http://localhost:3030/api/v1/register", config).then(handleResponse);
 }
-
+//Logout
 const logout = (): void => {
   localStorage.removeItem("user");
   sessionStorage.removeItem("user");

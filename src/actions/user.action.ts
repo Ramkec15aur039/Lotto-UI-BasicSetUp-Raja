@@ -1,43 +1,33 @@
-/*************************** Constants *******************************/
 import {
-  USER_LOGIN_FAILURE,
-  USER_LOGIN_REQUEST,
-  USER_LOGIN_SUCCESS,
-  USER_LOGOUT,
+  USER_LOGIN_FAILURE,USER_LOGIN_REQUEST,
+  USER_LOGIN_SUCCESS,USER_LOGOUT,
   USER_REGISTER_FAILURE,
-  USER_REGISTER_REQUEST,
+ USER_REGISTER_REQUEST,
   USER_REGISTER_SUCCESS,
 } from "../constants";
-
-/****************************** Services *********************************/
 import { userService } from "../services";
-
-/****************************** Helpers **********************************/
 import { history } from "../helpers";
-
-/******************************* Types ***********************************/
 import { Dispatch } from "redux";
 import { AppActions, User } from "../types";
 
-/************************** User Login Action ***************************/
 const login = ({
   email,
   password,
-  remember = false,
 }: {
   email: string;
   password: string;
-  remember?: boolean;
 }) => {
   return (dispatch: Dispatch<AppActions>) => {
     dispatch(request());
-    userService.login({ email, password, remember }).then(
+    userService.login({ email, password }).then(
       (user) => {
         dispatch(success(user));
-        history.push("/dashboard");
+       // history.push("/homePage");
+        window.location.href = "/homePage";
+
       },
       (error) => {
-        alert(error);
+       // alert("Fill User Email");
         dispatch(failure(error));
       }
     );
@@ -56,23 +46,31 @@ const login = ({
 
 /*************************** User Register Action *****************************/
 const register = ({
-  fullName,
+  firstName,
+  lastName,
   email,
+  phone,
+  dob,
   password,
 }: {
-  fullName: string;
+  firstName: string;
+  lastName: string;
   email: string;
+  phone:string;
+  dob:string;
   password: string;
 }) => {
   return (dispatch: Dispatch<AppActions>) => {
     dispatch(request());
-    userService.register({ fullName, email, password }).then(
+    userService.register({ firstName,lastName, email,phone,dob,password }).then(
       () => {
         dispatch(success());
-        window.location.reload(true);
+        //window.location.reload(true);
+        window.location.href = "/";
+
       },
       (error) => {
-        alert(error);
+       // alert(error);
         dispatch(failure(error));
       }
     );
