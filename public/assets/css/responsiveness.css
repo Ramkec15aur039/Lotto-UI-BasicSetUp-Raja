@@ -73,6 +73,9 @@
     padding-left: 2rem;
     margin-top: 1rem !important;
   }
+  .texts{
+    left: 180px !important;
+  }
 }
 
 /*---Desktop devices---*/

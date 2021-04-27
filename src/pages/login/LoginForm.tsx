@@ -26,7 +26,8 @@ type Props = LinkStateToProps & LinkDispatchToProps;
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     button: {
-      margin: theme.spacing(2),
+      marginTop: theme.spacing(2),
+      marginBottom: theme.spacing(3),
       width: "100%",
     },
   })
@@ -169,6 +170,7 @@ const LoginForm: React.FC<Props> = (props: Props) => {
                       style={{ textTransform: "none" }}
                       variant="contained"
                       color="default"
+                      id="google-btn"
                       className={classes.button}
                       startIcon={<FaGoogle />}
                       href={`${hostConfig.API_URL}auth/google`}
@@ -185,6 +187,7 @@ const LoginForm: React.FC<Props> = (props: Props) => {
                       variant="contained"
                       color="default"
                       className={classes.button}
+                      id="faceBook-btn"
                       startIcon={<FacebookIcon />}
                       href={`${hostConfig.API_URL}auth/facebook`}
                     >
