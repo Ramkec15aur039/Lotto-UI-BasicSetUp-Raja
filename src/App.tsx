@@ -18,7 +18,7 @@ import PlaceYourJackpotBet from "./pages/placeYourJackpotBet";
 import JackpotBet from "./pages/jackpotBet";
 import ChooseColor from "./pages/chooseColor";
 import PlayForJackpot from "./pages/playForJackpot"
-// import GoogleAuth from "./pages/GoogleAuth";
+ import GoogleAuth from "./pages/GoogleAuth";
 
 
 /******************************** CSS *********************************/
@@ -67,9 +67,9 @@ const App: React.FC = () => {
                 path="/ChooseColor"
                 render={() => <ChooseColor />}
               />
-               {/* <Route path="/auth">
+               <Route path="/auth">
                 <GoogleAuth />
-              </Route> */}
+              </Route>
             </Switch>
           </div>
         </MuiThemeProvider>

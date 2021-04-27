@@ -45,3 +45,10 @@
     border-radius: 4px !important;
     opacity: 1;
   }
+  .centered {
+    height: 5vh; 
+  }
+  .texts {
+   position:absolute;
+   left: 300px;
+  }

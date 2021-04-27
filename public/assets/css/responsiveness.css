@@ -106,9 +106,6 @@
   .navbar-toggler {
     padding-right: 2rem;
   }
-  .btnCustom.responsive {
-    margin-bottom: 2rem;
-  }
   .col-md-6.paddingMobile {
     padding-left: 0;
   }
@@ -151,7 +148,7 @@
   }
   .price {
     font-size: 19px !important;
-}
+  }
 }
 
 /* -------------------- Content - Place Your Jackpot Bet  --------------------- */
@@ -171,7 +168,31 @@
     height: 700px !important;
   }
   .jackpotBetUl {
-    margin-left: 1rem;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .baseballJackpotBet {
+    font-size: 50px !important;
+  }
+  .baseballJackpotBet > .placeYourJackpotBetNumber {
+    font-size: 16px !important;
+    top: 30% !important;
+    left: 50% !important;
+    width: 25px !important;
+    height: 25px !important;
+  }
+  .h3-Responsive {
+    font-size: 16px !important;
+  }
+  .btnCustom.responsive {
+    margin-bottom: 8rem;
+    transform: scale(0.8);
+  }
+  .jackpotBetMargin {
+    margin-top: 0 !important;
+  }
+  .deleteIcon{
+    right: -40px !important;
   }
 }
 
@@ -186,6 +207,9 @@
   .submitBet {
     padding-top: 2rem !important;
     padding-bottom: 1rem;
+  }
+  .submitBet {
+    transform: scale(0.8);
   }
 }
 
@@ -204,9 +228,6 @@
 /*---Tablets and Mobile ---*/
 
 @media (min-width: 250px) and (max-width: 1024px) {
-  .baseballJackpotBet > .baseBallNumber.PlayForJacpotDiv {
-    left: 35% !important;
-  }
   .li-Responsive-PlayForJackpot {
     margin-right: 10px;
   }
@@ -220,5 +241,45 @@
     margin-left: auto;
     margin-right: auto;
     width: 61%;
+  }
+  .baseballPlayForJackpot {
+    font-size: 45px !important;
+    position: relative;
+  }
+  .baseballPlayForJackpot > .baseBallNumber.PlayForJacpotDiv {
+    width: 30px !important;
+    height: 30px !important;
+    top: 17% !important;
+    left: 16% !important;
+  }
+  .PlayForJacpotNumber {
+    font-size: 18px !important;
+    padding-left: 0.4rem !important;
+    padding-top: 0.3rem !important;
+  }
+  input[type="text"].playForJackpotInput::-webkit-input-placeholder {
+    font-size: 12px !important;
+  }
+  .PlayForJackpotUl{
+    padding-right: 0.6rem;
+  }
+  .playForJackpotMain{
+    order: 2 !important;
+  }
+}
+
+/* -------------------- Content - Play for Jackpot --------------------- */
+
+/*---Tablets and Mobile ---*/
+
+@media (min-width: 250px) and (max-width: 1024px) {
+  .chooseColorUl{
+    padding-left: 0;
+  }
+  .chooseColorBlack {
+    right: -8px !important;
+  }
+  .skipButton{
+    margin-bottom: 7rem;
   }
 }

@@ -1,4 +1,6 @@
 import { User } from "../types";
+import {  hostConfig } from "../config/index";
+
 
 const login = ({
   email,
@@ -19,7 +21,7 @@ const login = ({
     // referrer: "no-referrer",
     body: JSON.stringify({ email, password }),
   };
-  return fetch("http://localhost:3030/api/v1/login", config)
+  return fetch(`${hostConfig.API_URL}login`, config)
     .then(handleResponse)
     .then((user: User) => {
       console.log("user",user);
@@ -58,7 +60,7 @@ function register({
     referrer: "no-referrer",
     body: JSON.stringify({ firstName,lastName,phone,password,email,dob }),
   };
-  return fetch("http://localhost:3030/api/v1/register", config).then(handleResponse);
+  return fetch(`${hostConfig.API_URL}register`, config).then(handleResponse);
 }
 //Logout
 const logout = (): void => {

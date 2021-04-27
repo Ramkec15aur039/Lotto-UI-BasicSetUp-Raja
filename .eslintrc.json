@@ -24,6 +24,7 @@
       "warn",
       { "extensions": [".js", ".jsx", ".ts", ".tsx"] }
     ],
+<<<<<<< HEAD
     // "no-console": [
     //   "error",
     //   {
@@ -31,6 +32,14 @@
     //   }
     // ],
     "no-console": "off",
+=======
+    "no-console": [
+      "warn",
+      {
+        "allow": ["warn", "error"]
+      }
+    ],
+>>>>>>> 32dbd9dbbb098fda49a6084078627e43166f4ef9
     "multiline-ternary": 0,
     "no-unused-vars": "off",
     "no-shadow": 0,
