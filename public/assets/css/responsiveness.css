@@ -152,6 +152,14 @@
   .price {
     font-size: 19px !important;
   }
+  .homeColResponsive{
+    position: relative;
+  }
+  .Illustrator-responsive{
+    position: absolute !important;
+    right: 0;
+    top: 3rem;
+  }
 }
 
 /* -------------------- Content - Place Your Jackpot Bet  --------------------- */

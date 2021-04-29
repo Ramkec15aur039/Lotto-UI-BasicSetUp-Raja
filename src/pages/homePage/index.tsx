@@ -9,6 +9,10 @@ import { Link } from "react-router-dom";
 /********************************* CSS **********************************/
 import "./homePage.css";
 
+/********************************* Image **********************************/
+import JackPotIllustrator from "../../assets/images/Lotto-illustration-jackpot.svg";
+import Illustrator from "../../assets/images/Lotto-illustration.svg";
+
 export default function HomePage() {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -24,18 +28,22 @@ export default function HomePage() {
           </div>
           <div className="row">
             <div className="col-md-2 mt-3 adLeft"></div>
-            <div className="col-md-8">
+            <div className="col-md-8 homeColResponsive">
               <div className="row">
                 <div className="col-md-7">
                   <div className="row">
-                    <div className="col-12"></div>
+                    <img
+                      src={JackPotIllustrator}
+                      alt="JackPotIllustrator"
+                      className="img-fluid"
+                    />
                   </div>
                   <div className="row contentResponsiveHome">
-                    <div className="col-4 text-center contentPaddingTop">
+                    <div className="col-4 text-center">
                       <p>Next Draw</p>
                       <p>Thursday 08/04/2021</p>
                     </div>
-                    <div className="col-4 text-center contentPaddingTop">
+                    <div className="col-4 text-center">
                       <p>Countdown for next Draw</p>
                       <p className="price">00:15:00</p>
                       <p>
@@ -44,22 +52,18 @@ export default function HomePage() {
                         <span className="pl-2">sec</span>
                       </p>
                     </div>
-                    <div className="col-4 text-center contentPaddingTop">
+                    <div className="col-4 text-center">
                       <p>Next Jackpots Price Pool</p>
                       <span className="price">$100,000</span>
                     </div>
                   </div>
                 </div>
-                <div className="col-md-5">
-                  <div className="row">
-                    <div className="col-12 contentPaddingTop text-center">
-                      <button className="btn btn-primary playNowBtn">
-                        Play Now
-                      </button>
-                      <p className="time">Time Remaining</p>
-                      <p className="timer">00:15:00</p>
-                    </div>
-                  </div>
+                <div className="col-5 mt-lg-5 Illustrator-responsive">
+                  <img
+                    src={Illustrator}
+                    alt="Illustrator"
+                    className="img-fluid"
+                  />
                 </div>
               </div>
               <div className="row mb-3">
